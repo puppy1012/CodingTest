@@ -1,5 +1,5 @@
 h=int(input())
-
+#h는 입력받는 값
 count =0
 
 for i in range(h+1) :
