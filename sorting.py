@@ -17,10 +17,14 @@ print(array)
 array=[7,5,9,0,3,1,6,2,4,8]
 
 for i in range(1,len(array)):
+    print('for i의 값은',i)
     #start,end,step i부터 0까지 -1만큼 진행하라
     for j in range(i,0,-1):
         if array[j]<array[j-1]:
+            print('스위칭 작업 진행중')
+            print(array[j],'랑',array[j-1],'값이')
             array[j],array[j-1]=array[j-1],array[j]
+            print(array[j-1], '랑', array[j], '값으로 변경됨')
         else:
             break
 print(array)
