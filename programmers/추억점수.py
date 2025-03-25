@@ -8,8 +8,8 @@ def solution(name, yearning, photo):
     결과값을 list로 저장했다 return하기
     """
     score_mapping={}#딕셔너리
-    for i in range(len(name)): #mapping작업
-        score_mapping[name[i]]=yearning[i]
+    for idx, i in enumerate(name):
+        score_mapping[i]=yearning[idx]
     result=[]#결과값 저장용 리스트
     for person in photo:#photo의 여러 리스트를 나누기위함
         total_score=0#photo안의 여러리스트의 점수 계산용
